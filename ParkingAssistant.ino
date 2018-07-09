@@ -82,7 +82,7 @@ void setup() {
   Serial.begin(9600); // Starts the serial communication
   Timer1.initialize(250000);         // initialize timer1, and set a 1/4 second period
   Timer1.attachInterrupt(isrTimer);  // attaches isrTimer() as a timer overflow interrupt
-  redLight();
+  redLight(); //Debug statements to test the red light on the traffic light on startup.
   delay(500);
   yellowLight();
   delay(500);
